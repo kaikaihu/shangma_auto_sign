@@ -1,4 +1,4 @@
-const signIn = require('./sign_in.js')
+import signIn from './sign_in.js'
 
 signIn()
   .then(() => {
@@ -7,4 +7,4 @@ signIn()
   .catch(error => {
     console.error('执行签到失败：', error.message)
     process.exit(1)
-  })
+ })
